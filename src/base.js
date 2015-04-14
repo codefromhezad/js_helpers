@@ -20,6 +20,19 @@ var H = {
 
 
 
+	// Get Object size
+	// Source: http://stackoverflow.com/questions/5223/length-of-a-javascript-object-that-is-associative-array
+
+	objSize: function(obj) {
+	    var size = 0, key;
+	    for (key in obj) {
+	        if (obj.hasOwnProperty(key)) size++;
+	    }
+	    return size;
+	},
+
+
+
 	// String pad
 	// Source: http://www.webtoolkit.info/
 
