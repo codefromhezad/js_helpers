@@ -105,7 +105,7 @@ var H = {
 	        }
 
 	        if( H.logger.tempData.domainName ) {
-	            var domainString = H.strpad(H.logger.tempData.domainName + ' ', H.logger.domainPadLength, ' ', STR_PAD_LEFT) + H.logger.domainSeparator;
+	            var domainString = H.strpad(H.logger.tempData.domainName + ' ', H.logger.domainPadLength, ' ', H.STR_PAD_LEFT) + H.logger.domainSeparator;
 
 	            args.unshift(domainString);
 	            args.unshift('font-weight: bold; '+H.logger.logDomainStyles[H.logger.logType]);
